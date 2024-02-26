@@ -1,0 +1,130 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Serve para ficar dentro da borda*/
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(51, 45, 45);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+/* chamar a classe flax */
+.flex {
+    display: flex;
+}
+
+/* botão menu e botão normal */
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: aqua;
+    border: 0;
+    border-radius: 30px;
+    /* arredondar bordas */
+    cursor: pointer;
+    /* Cursor clicável */
+    transition: .2s;
+}
+
+/* Estilo cabeçalho */
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Este sinal > serve para chamar a classe dentro da classe pai "header" */
+
+header a {
+    color: #7d7d7d;
+    /* cor da fonte */
+    text-decoration: none;
+    /* retiramos o sublinhado */
+    display: inline-block;
+    /* Para poder dar zoom na fonte do menu */
+    transition: .2s;
+    /* transição do botão */
+}
+
+header a:hover {
+    color: #fff;
+    /* quando passar o mouse em cima vai ficar mais claro */
+    transform: scale(1.05);
+    /* som da fonte */
+
+}
+
+header nav ul {
+    list-style-type: none;
+    /* Removemos as bolinhas do link */
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px #fff;
+    /* cor da sombra do botão */
+    transform: scale(1.05);
+}
+
+/* estilo topo do site  */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    /* gap é espaçamento dos elementos */
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: aquamarine;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* animação */
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
